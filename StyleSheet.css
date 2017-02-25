@@ -1,0 +1,256 @@
+﻿@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffdd00;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+}
+
+.form-container {
+    max-width: 650px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font: bold 14px sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+
+.form-container h1 {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 26px;
+    padding: 15px 10px 15px;
+    border-bottom: 2px solid;
+    margin: 0 0 15px 0;
+}
+
+.form-container .form-row {
+    text-align: left;
+    margin: 0 auto 22px;
+    width: 200px;
+}
+
+.form-container .form-inline {
+    display: inline-block;
+    margin: 16px auto;
+}
+
+.form-container input {
+    color: #5f5f5f;
+    box-sizing: border-box;
+    padding: 12px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    border: 1px solid #dbdbdb;
+}
+.form-container input:hover {
+    border-color: #ffdd00;
+}
+.form-container input:focus {
+    outline:0;
+	border-color: #ffdd00;
+}
+
+
+
+    /*.form-container input[type="radio"] {
+        box-shadow: none;
+        margin-top: -22px;
+        position: absolute;
+        float: right;
+        width: 300px;
+    }*/
+
+    .form-container input[type="checkbox"] {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        width: 10%;
+       
+    }
+
+#letter {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    //display: block;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+}
+
+.logo {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+    .logo img {
+        max-width: 100%;
+    }
+
+.center {
+    margin: 16px auto;
+}
+
+p {
+    border-bottom: 2px solid;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.lableposition {
+    max-width: 150px;
+}
+
+.form-container .right {
+    max-width: 160px;
+    margin-top: 16px;
+}
+
+.form-container #submit {
+    border-radius: 28px;
+    font-family: Georgia;
+    color: #000000;
+    font-size: 20px;
+    background: #ffdd00;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 50px;
+    outline: none;
+	margin-left:5px;
+}
+
+#quiz{
+	border-radius: 28px;
+    font-family: Georgia;
+    color: #000000;
+    font-size: 20px;
+    background: #ffdd00;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    outline: none;
+	margin-left:50px;
+	//display:none;
+}
+#next{
+	border-radius: 28px;
+    font-family: Georgia;
+    color: #000000;
+    font-size: 20px;
+    background: #ffdd00;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    outline: none;
+	margin-left:40px;
+	display:none;
+}
+#end, #reg{
+	border-radius: 28px;
+    font-family: Georgia;
+    color: #000000;
+    font-size: 20px;
+    background: #ffdd00;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    outline: none;
+	margin-left:30px;
+	display:none;
+}
+#emailVal{
+	border-radius: 28px;
+    font-family: Georgia;
+    color: #000000;
+    font-size: 20px;
+    background: #ffdd00;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    outline: none;
+	margin-left:30px;
+	//display:none;
+}
+.form-container .form-row #email{
+    margin-left:-20px;
+    width: 250px;
+}
+.question{
+	width:80%;
+	word-wrap: break-word;
+	margin:0 auto;
+}
+.form-container input[type="radio"] {
+    box-shadow: none;
+    float: left;
+	margin-right:10px;
+	display:inline-block;
+}
+#quest1, #quest2, #quest3{
+    display: inline-block;
+	width:100%;
+}
+.question{
+	text-align:left;
+	padding-top:4%;
+}
+.questionName{
+	width:80%;
+	margin:0 auto;
+}
+.hideD{
+	display:none;
+	font-size:20px;
+}
+.hideP{
+	width:80%;
+	margin:0 auto;
+	font-size:20px;
+	display:none;
+}
+#resultPercent{
+    border-radius: 28px;
+	box-sizing: border-box;
+    padding: 10px;
+    font-family: Georgia;
+    color: #000000;
+    background: #ffdd00;
+    font-size: 20px;
+    margin:0 auto;
+    text-decoration: none;
+    text-align: center;  
+    display: none;
+}
+.showResultInBig{
+	font-size: 40px !important;
+	height:90%;
+	
+}

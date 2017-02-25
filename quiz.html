@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Kvíz</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="yellowroad-logo-black.png" />
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="form-title-row">
+            <h1>Yellowroad Kvíz</h1>
+        </div>
+        <div class="form-container" method="post" action="" onsubmit="return inputUserData()">
+			<span>Email cím megerősítése:</span>
+			<br />
+			<form>
+            <div class="form-row form-inline">
+                <input type="text" name="email" id="email" disabled placeholder="yellowroad@yellow.hu" /><!-- required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@ [a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" --> 
+            </div>
+			
+			<div class="form-row center">
+                <input type="submit" value="Megerősítés" id="emailVal" />
+            </div>
+            <br />
+			</form>
+			<form>
+            <div class="hideD">
+                <p class="questionName">Kérdés</p>
+				<div class="question">
+						<div class="check1">
+							<input type="radio" name="ans" id="ans0" value="a" required />
+							<label for="ans0" id="ansWord0"></label>
+						</div>
+						<div class="check2">
+							<input type="radio" name="ans" id="ans1" value="b" />
+							<label for="ans1" id="ansWord1"></label>
+						</div>
+						<div class="check3">
+							<input type="radio" name="ans" id="ans2" value="c" />
+							<label for="ans2" id="ansWord2"></label>
+						</div>
+				</div>
+            </div>
+			<p class="hideP">Kedves felhasználó!<br>Köszönjük regisztrációdat. Az alábbi kvízzel egy játékban vehetsz részt, amely növeli az esélyedet a bejutáshoz. Nincs más dolgod, mint válaszolni 12 kérdésre és 60% fölötti eredmény esetén egy Yellowroados táskával gazdagodhatsz. A tesztet a gombra kattintva indíthatod.</p>
+				
+            <div class="form-row center">
+                <input type="button" value="Kvíz" id="quiz" />
+            </div>
+            <div class="form-row center">
+                <input type="button" value="Tovább" id="next" />
+            </div>
+			<div class="form-row center">
+                <input type="button" value="Eredményem" id="end" />
+            </div>
+			<div class="form-row center">
+                <input type="button" value="Regisztáció" id="reg" />
+            </div>
+			<div >
+                <span id="resultPercent"/><span>
+			</div>
+			</form>
+        </div>
+    </div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="quiz2.js"></script>
+</body>
+</html>
